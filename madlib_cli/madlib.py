@@ -18,7 +18,7 @@ def parse_template(content):
     # print(type(content))
     parts = re.findall('{(.+?)}',content)
     
-    print(parts)
+    # print(parts)
     for part in parts:
         # print(part)
         content = re.sub(part, "", content)
